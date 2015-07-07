@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<metacity_theme>
+
+<info>
+	<name>Macoma-Arch</name>
+   <author>Hillar</author>
+   <copyright>2010 Hillar</copyright>
+   <date>2010</date>
+   <description>Macoma-Brown</description>
+</info>
+
+<!-- frame geometry defs -->
+<frame_geometry name="normal">
+	<distance name="left_width" value="1"/>
+	<distance name="right_width" value="1"/>
+	<distance name="bottom_height" value="1"/>
+	<distance name="left_titlebar_edge" value="8"/>
+	<distance name="right_titlebar_edge" value="4"/>
+	<aspect_ratio name="button" value="0.8"/>
+	<distance name="title_vertical_pad" value="0"/>
+	<border name="title_border" left="8" right="0" top="3" bottom="3"/>
+	<border name="button_border" left="0" right="0" top="3" bottom="3"/>
+</frame_geometry>
+
+<frame_geometry name="maximised">
+	<distance name="left_width" value="1"/>
+	<distance name="right_width" value="1"/>
+	<distance name="bottom_height" value="1"/>
+	<distance name="left_titlebar_edge" value="8"/>
+	<distance name="right_titlebar_edge" value="4"/>
+	<aspect_ratio name="button" value="0.8"/>
+	<distance name="title_vertical_pad" value="0"/>
+	<border name="title_border" left="8" right="0" top="3" bottom="3"/>
+	<border name="button_border" left="0" right="0" top="3" bottom="3"/>
+</frame_geometry>
+
+<!-- draw ops defs -->
+<!-- backgrounds -->
+<draw_ops name="background">
+	<image alpha="1.0" filename="back.png"
+		x="2" y="(top_height/2)-48"
+		width="width-1" height="100"/>
+</draw_ops>
+<draw_ops name="background2">
+	<rectangle color="#333333" filled="true"
+		x="0" y="0" width="width" height="height"/>
+	<image alpha="0.7" filename="back.png"
+		x="2" y="(top_height/2)-48"
+		width="width-1" height="100"/>
+</draw_ops>
+<draw_ops name="background3">
+	<rectangle color="#333333" filled="true"
+		x="0" y="0" width="width" height="height"/>
+	<image alpha="0.7" filename="back.png"
+		x="2" y="(top_height/2)-48"
+		width="width" height="100"/>
+</draw_ops>
+<draw_ops name="background_border">
+<tint color="#333333" alpha="1"
+		x="0" y="0" width="width" height="1"/>
+<gradient type="vertical" x="0" y="0" width="1" height="height">
+		<color value="#333333"/>
+		<color value="#333333"/>
+</gradient>
+<gradient type="vertical" x="width-1" y="0" width="1" height="height">
+		<color value="#333333"/>
+		<color value="#333333"/>
+</gradient>
+<tint color="#333333" alpha="1"
+		x="0" y="height-1" width="width" height="1"/>
+</draw_ops>
+
+<!-- titlebar pieces -->
+<draw_ops name="title_active">
+	<title color="#DDDDDD" x="1" y="1"/>
+	<title color="#FFFFFF" x="0" y="0"/>
+</draw_ops>
+
+<draw_ops name="title_inactive">
+	<title color="#1793D1" x="0" y="0"/>
+</draw_ops>
+
+<draw_ops name="titlebar_background">
+<tint color="#333333" alpha="1"
+		x="1" y="1" width="width-2" height="1"/>
+<tint color="#333333" alpha="1"
+		x="1" y="1" width="1" height="height-2"/>
+<tint color="#333333" alpha="1"
+		x="width-2" y="1" width="1" height="height-2"/>
+<tint color="#333333" alpha="1"
+		x="1" y="height-2" width="width-2" height="1"/>
+<tint color="#333333" alpha="1"
+		x="1" y="height-1" width="width-2" height="1"/>
+</draw_ops>
+
+
+
+<!-- icons -->
+<draw_ops name="icon_noop"/>
+
+<draw_ops name="menu_icon">
+	<icon alpha="1.0"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_close">
+	<image alpha="1.0" filename="cross.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+<draw_ops name="icon_close2">
+	<image alpha="1.0" filename="cross2.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_close3">
+	<image alpha="1.0" filename="cross3.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_min">
+	<image alpha="1.0" filename="bar.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+<draw_ops name="icon_min2">
+<image alpha="1.0" filename="bar2.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_min3">
+<image alpha="1.0" filename="bar3.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_max">
+<image alpha="1.0" filename="up.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_max2">
+<image alpha="1.0" filename="up2.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_max3">
+<image alpha="1.0" filename="up3.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_unmax">
+	 
+<image alpha="1.0" filename="down.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_unmax2">
+<image alpha="1.0" filename="down2.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+<draw_ops name="icon_unmax3">
+<image alpha="1.0" filename="down3.png"
+		x="(width-12)/2" y="(height-12)/2"
+		width="12" height="12"/>
+</draw_ops>
+
+
+<!-- frame style defs -->
+<frame_style name="normal" geometry="normal">
+	<piece position="entire_background"    draw_ops="background"/>
+	<piece position="titlebar"             draw_ops="titlebar_background"/>
+	<piece position="title"                draw_ops="title_active"/>
+	<piece position="overlay"              draw_ops="background_border"/>
+	
+	<button function="close"    state="normal"   draw_ops="icon_close"/>
+	<button function="close"    state="prelight" draw_ops="icon_close2"/>
+	<button function="close"    state="pressed"  draw_ops="icon_close3"/>
+	<button function="minimize" state="normal"   draw_ops="icon_min"/>
+	<button function="minimize" state="prelight" draw_ops="icon_min2"/>
+	<button function="minimize" state="pressed"  draw_ops="icon_min3"/>
+	<button function="maximize" state="normal"   draw_ops="icon_max"/>
+	<button function="maximize" state="prelight" draw_ops="icon_max2"/>
+	<button function="maximize" state="pressed"  draw_ops="icon_max3"/>
+	<button function="menu"     state="normal"   draw_ops="menu_icon"/>
+	<button function="menu"     state="prelight" draw_ops="menu_icon"/>
+	<button function="menu"     state="pressed"  draw_ops="menu_icon"/>
+</frame_style>
+
+<frame_style name="unfocused" geometry="normal">
+	<piece position="entire_background" draw_ops="background2"/>
+	<piece position="title"             draw_ops="title_inactive"/>
+	
+	<button function="close"    state="normal"   draw_ops="icon_close"/>
+	<button function="close"    state="prelight" draw_ops="icon_close2"/>
+	<button function="close"    state="pressed"  draw_ops="icon_close3"/>
+	<button function="minimize" state="normal"   draw_ops="icon_min"/>
+	<button function="minimize" state="prelight" draw_ops="icon_min2"/>
+	<button function="minimize" state="pressed"  draw_ops="icon_min3"/>
+	<button function="maximize" state="normal"   draw_ops="icon_max"/>
+	<button function="maximize" state="prelight" draw_ops="icon_max2"/>
+	<button function="maximize" state="pressed"  draw_ops="icon_max3"/>
+	<button function="menu"     state="normal"   draw_ops="menu_icon"/>
+	<button function="menu"     state="prelight" draw_ops="menu_icon"/>
+	<button function="menu"     state="pressed"  draw_ops="menu_icon"/>
+</frame_style>
+
+<frame_style name="maximised" geometry="maximised">
+	<piece position="entire_background"    draw_ops="background"/>
+	<piece position="titlebar"             draw_ops="titlebar_background"/>
+	<piece position="title"                draw_ops="title_active"/>
+	<piece position="overlay"           draw_ops="background_border"/>
+	
+	<button function="close"    state="normal"   draw_ops="icon_close"/>
+	<button function="close"    state="prelight" draw_ops="icon_close2"/>
+	<button function="close"    state="pressed"  draw_ops="icon_close3"/>
+	<button function="minimize" state="normal"   draw_ops="icon_min"/>
+	<button function="minimize" state="prelight" draw_ops="icon_min2"/>
+	<button function="minimize" state="pressed"  draw_ops="icon_min3"/>
+	<button function="maximize" state="normal"   draw_ops="icon_unmax"/>
+	<button function="maximize" state="prelight" draw_ops="icon_unmax2"/>
+	<button function="maximize" state="pressed"  draw_ops="icon_unmax3"/>
+	<button function="menu"     state="normal"   draw_ops="menu_icon"/>
+	<button function="menu"     state="prelight" draw_ops="menu_icon"/>
+	<button function="menu"     state="pressed"  draw_ops="menu_icon"/>
+</frame_style>
+
+<frame_style name="maximised_unfocused" geometry="maximised">
+	<piece position="entire_background" draw_ops="background"/>
+	<piece position="title"             draw_ops="title_inactive"/>
+	<piece position="titlebar"          draw_ops="titlebar_background"/>
+	<piece position="overlay"           draw_ops="background_border"/>
+	
+	<button function="close"    state="normal"   draw_ops="icon_close"/>
+	<button function="close"    state="prelight" draw_ops="icon_close2"/>
+	<button function="close"    state="pressed"  draw_ops="icon_close3"/>
+	<button function="minimize" state="normal"   draw_ops="icon_min"/>
+	<button function="minimize" state="prelight" draw_ops="icon_min2"/>
+	<button function="minimize" state="pressed"  draw_ops="icon_min3"/>
+	<button function="maximize" state="normal"   draw_ops="icon_unmax"/>
+	<button function="maximize" state="prelight" draw_ops="icon_unmax2"/>
+	<button function="maximize" state="pressed"  draw_ops="icon_unmax3"/>
+	<button function="menu"     state="normal"   draw_ops="menu_icon"/>
+	<button function="menu"     state="prelight" draw_ops="menu_icon"/>
+	<button function="menu"     state="pressed"  draw_ops="menu_icon"/>
+</frame_style>
+
+<!-- frame style set defs -->
+<frame_style_set name="normal">
+   <frame focus="yes" state="normal" resize="both" style="normal"/>
+   <frame focus="no"  state="normal" resize="both" style="unfocused"/>
+   <frame focus="yes" state="maximized"            style="maximised"/>
+   <frame focus="no"  state="maximized"            style="maximised_unfocused"/>
+   <frame focus="yes" state="shaded"               style="normal"/>
+   <frame focus="no"  state="shaded"               style="unfocused"/>
+   <frame focus="yes" state="maximized_and_shaded" style="maximised"/>
+   <frame focus="no"  state="maximized_and_shaded" style="maximised_unfocused"/>
+</frame_style_set>
+
+<!-- window defs -->
+<window type="normal"       style_set="normal"/>
+<window type="dialog"       style_set="normal"/>
+<window type="modal_dialog" style_set="normal"/>
+<window type="menu"         style_set="normal"/>
+<window type="utility"      style_set="normal"/>
+<window type="border"       style_set="normal"/>
+
+</metacity_theme>
+
