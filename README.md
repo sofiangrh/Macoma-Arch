@@ -1,0 +1,2 @@
+# Macoma-Arch
+Metacity Theme
